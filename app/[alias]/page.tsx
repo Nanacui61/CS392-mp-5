@@ -8,7 +8,7 @@ interface AliasPageProps {
 }
 
 // Dynamic route page that handles /[alias]
-export default async function AliasPage({ params }: AliasPageProps) { {
+export default async function AliasPage({ params }: AliasPageProps) {
     const collection = await getCollection(LINKS_COLLECTION);
 
     // Find the original URL for the given alias
