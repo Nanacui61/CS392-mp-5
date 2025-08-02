@@ -42,7 +42,7 @@ export default function HomePage() {
               className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
-              type="url"
+              type="text"
               placeholder="Enter full URL (e.g. https://example.com)"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
