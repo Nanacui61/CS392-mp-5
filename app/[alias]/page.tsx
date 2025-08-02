@@ -1,8 +1,14 @@
 import { redirect } from 'next/navigation';
 import getCollection, { LINKS_COLLECTION} from "@/mongodb";
 
+interface AliasPageProps {
+    params: {
+        alias: string;
+    };
+}
+
 // Dynamic route page that handles /[alias]
-export default async function AliasPage({ params }: { params: { alias: string } }) {
+export default async function AliasPage({ params }: AliasPageProps) { {
     const collection = await getCollection(LINKS_COLLECTION);
 
     // Find the original URL for the given alias
