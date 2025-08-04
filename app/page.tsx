@@ -38,7 +38,7 @@ export default function HomePage() {
               placeholder="Enter alias (e.g. my-link)"
               value={alias}
               onChange={(e) => setAlias(e.target.value)}
-              required
+
               className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
@@ -46,7 +46,7 @@ export default function HomePage() {
               placeholder="Enter full URL (e.g. https://example.com)"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              required
+
               className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button
